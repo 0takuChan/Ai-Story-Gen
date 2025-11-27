@@ -119,35 +119,14 @@ Project_AI/
 - `POST /api/game/start` - เริ่มเกมใหม่
 - `POST /api/game/choice` - ส่งตัวเลือกและรับเนื้อเรื่องต่อ
 
-## ตัวอย่างการใช้ API
 
-```javascript
-// เริ่มเกม
-POST /api/game/start
-{
-  "theme": "adventure"
-}
+## interface
 
-// เลือกตัวเลือก
-POST /api/game/choice
-{
-  "story_id": "uuid-here",
-  "choice_index": 0,
-  "context": "คุณเดินเข้าไปในถ้ำ"
-}
-```
+<img width="1909" height="995" alt="Screenshot 2025-11-27 014839" src="https://github.com/user-attachments/assets/5cb84c7e-13fe-4eae-bbcd-75200f4519ab" />
+<img width="1896" height="1001" alt="Screenshot 2025-11-27 014918" src="https://github.com/user-attachments/assets/e4912d75-7ce2-46a6-a596-b882da6873f5" />
+<img width="1893" height="1001" alt="Screenshot 2025-11-27 015037" src="https://github.com/user-attachments/assets/65888e41-62b8-45c0-9f48-03c98c9442b0" />
 
-## ข้อควรรู้
 
-- เรื่องจะจบภายใน 4-5 ตา (turns)
-- แต่ละครั้งที่เล่นจะได้เรื่องและจุดจบที่ต่างกัน
-- AI ใช้ RAG เพื่อให้เรื่องสอดคล้องกับธีมที่เลือก
-- รองรับภาษาไทย
 
-## License
-
-MIT License
-
-## Contributors
 
 Created for CE392 Project - AI Story Game with RAG
